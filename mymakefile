@@ -1,0 +1,23 @@
+all: forward fwi
+
+# Define a pattern rule for running individual targets
+-%:
+	-@$(MAKE) $*
+
+# Define forward dependency for each of the targets
+forward: generate_shot_data.py
+	python3 generate_shot_data.py marmousi2
+
+fwi: forward scipy pyrol sotb
+
+scipy: forward inversion_script.py
+	-@python3 inversion_script.py shot_control_inversion_scipy || true
+
+sotb: forward inversion_script.py
+	python3 inversion_script.py shot_control_inversion_sotb
+
+nlopt: forward inversion_script.py
+	python3 inversion_script.py shot_control_inversion_nlopt
+
+pyrol: forward fwi_marmousi2_pyrol_trillinos_daskcluster.py
+	python3 fwi_marmousi2_pyrol_trillinos_daskcluster.py
