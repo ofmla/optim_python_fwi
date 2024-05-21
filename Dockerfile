@@ -15,11 +15,8 @@ RUN mkdir -p /root/.ssh/ && \
     chmod -R 600 /root/.ssh/ && \
     ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
     
-# Clone devito repository 
-RUN git clone https://github.com/devitocodes/devito.git \
-    && cd devito \
-    && git branch specific-commit-branch e6cd0b0ab \
-    && git switch specific-commit-branch
+COPY get_devito.sh /opt/src/scripts/get_devito.sh
+RUN /opt/src/scripts/get_devito.sh
     
 # Choose the base image for our final image
 FROM continuumio/miniconda3:23.3.1-0
@@ -36,7 +33,7 @@ RUN wget --no-check-certificate 'https://sourceforge.net/projects/swig/files/lat
     unzip swig-4.2.1.tar.gz && \
     cd swigwin-4.2.1 && \
     ./configure --prefix=/usr/local && \
-    make && \
+    make -j 4 && \
     sudo make install && \
     cd .. && \
     rm -rf swigwin-4.2.1 swig-4.2.1.tar.gz
@@ -69,7 +66,7 @@ RUN wget --no-check-certificate 'https://github.com/stevengj/nlopt/archive/v2.7.
     && tar -xvf v2.7.1.tar.gz \
     && cd nlopt-2.7.1 \
     && cmake -S . -B build -DCMAKE_INSTALL_PREFIX=/usr/local -DPython_EXECUTABLE=$CONDA_DIR/envs/devito_e6cd0b0ab/bin/python -DSWIG_DIR:string=/usr/local/share/swig/4.2.1 -DSWIG_EXECUTABLE:string=/usr/local/bin/swig -DNLOPT_GUILE=OFF -DNLOPT_MATLAB=OFF -DNLOPT_OCTAVE=OFF \
-    && cmake --build build \
+    && cmake --build build  --parallel \
     && cmake --install build \
     && cd \
     && rm -rf nlopt-2.7.1 nlopt-2.7.1.tar.gz
