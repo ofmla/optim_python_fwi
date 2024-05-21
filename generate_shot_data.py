@@ -68,10 +68,10 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('model', type=str, help='Name of the model')
     args = parser.parse_args()
-    l = ['marmousi', 'marmousi2', 'overthrust']
-    if args.model not in l:
-        msg_strng = "{} model is not found; model must be one of the following: {}"
-        raise ValueError(msg_strng.format(args.model, ", ".join(l)))
-    make_sure_path_exists("./"+args.model+"/shots")
+
+    if args.model != 'marmousi2':
+        raise ValueError("Model name must be 'marmousi2'.")
+
+    make_sure_path_exists(f"./{args.model}/shots")
     forward_setup("./config/config.yaml", args.model)
     main()
