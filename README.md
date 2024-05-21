@@ -247,3 +247,18 @@ See the convergence history in iterate_LBFGS.dat
 ```
 
 There you have it ✌️ 
+
+## Data
+
+This repository uses data from the SEG Open Data collection, specifically the [Elastic Marmousi model](https://wiki.seg.org/wiki/AGL_Elastic_Marmousi). The data has been resampled for use in this project. The original data is provided by the Allied Geophysical Laboratory of the University of Houston and it is licensed under the Creative Commons Attribution 4.0 International License. You can download the original data from the following link:
+
+[Elastic Marmousi Model Data](https://s3.amazonaws.com/open.source.geoscience/open_data/elastic-marmousi/elastic-marmousi-model.tar.gz)
+
+## License Information
+Data License
+
+The resampled data used in this repository is derived from the Elastic Marmousi model data, which is licensed under the Creative Commons Attribution 4.0 International License. For more information about the license, please visit: [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)
+
+Code License
+
+The code in this repository is licensed under the Apache License 2.0. You are free to use, modify, and distribute the code under the terms of this license. For the full text of the license, please visit: [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
