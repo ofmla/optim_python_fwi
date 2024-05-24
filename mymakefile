@@ -8,10 +8,10 @@ all: forward fwi
 forward: generate_shot_data.py
 	python3 generate_shot_data.py marmousi2
 
-fwi: forward scipy pyrol sotb
+fwi: forward scipy pyrol sotb nlopt
 
 scipy: forward inversion_script.py
-	-@python3 inversion_script.py shot_control_inversion_scipy || true
+	- python3 inversion_script.py shot_control_inversion_scipy || true
 
 sotb: forward inversion_script.py
 	python3 inversion_script.py shot_control_inversion_sotb
