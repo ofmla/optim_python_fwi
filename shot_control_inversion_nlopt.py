@@ -9,7 +9,7 @@ from dask_cluster import DaskCluster
 from utils import save_model
  
 # appending a path
-sys.path.append('/app/nlopt-2.7.1/install/lib/python3.10/site-packages')
+sys.path.append('/usr/local/lib/python3.10/site-packages/')
 
 import nlopt
 
