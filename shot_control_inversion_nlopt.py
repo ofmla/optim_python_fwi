@@ -23,9 +23,6 @@ class ControlInversion:
         "Run the inversion workflow"
         dc = DaskCluster()
 
-        lb = None  # lower bound constraint
-        ub = None  # upper bound constraint
-
         parfile_path = dc.config_values['solver_params']['parfile_path']
 
         # Read initial guess and metadata from hdf5 file
@@ -90,7 +87,7 @@ class ControlInversion:
         # Save final model/image
         x = 1./np.sqrt(minx)
         g = open(results_path+s+'.file', 'wb')
-        X = x.reshape(-1, shape[1]).astype('float32').
+        X = x.reshape(-1, shape[1]).astype('float32')
         X.tofile(g)
         save_model(results_path+s+'.h5', 'vp', X, metadata)
 
