@@ -47,19 +47,19 @@ Key: space_order    Value: 8
 Key: dtype          Value: float32
 Running Forward modeling ...
 Shot with time interval of 4.427000045776367 ms
-/opt/conda/lib/python3.10/site-packages/segyio/utils.py:18: RuntimeWarning: Implicit conversion to contiguous array
-  warnings.warn(msg, RuntimeWarning)
-Shot with time interval of 4.427000045776367 ms
-Shot with time interval of 4.427000045776367 ms
-Shot with time interval of 4.427000045776367 ms
 Shot with time interval of 4.427000045776367 ms
 /opt/conda/lib/python3.10/site-packages/segyio/utils.py:18: RuntimeWarning: Implicit conversion to contiguous array
   warnings.warn(msg, RuntimeWarning)
 /opt/conda/lib/python3.10/site-packages/segyio/utils.py:18: RuntimeWarning: Implicit conversion to contiguous array
   warnings.warn(msg, RuntimeWarning)
+Shot with time interval of 4.427000045776367 ms
+Shot with time interval of 4.427000045776367 ms
+Shot with time interval of 4.427000045776367 ms
+Shot with time interval of 4.427000045776367 ms
 /opt/conda/lib/python3.10/site-packages/segyio/utils.py:18: RuntimeWarning: Implicit conversion to contiguous array
   warnings.warn(msg, RuntimeWarning)
-Shot with time interval of 4.427000045776367 ms
+/opt/conda/lib/python3.10/site-packages/segyio/utils.py:18: RuntimeWarning: Implicit conversion to contiguous array
+  warnings.warn(msg, RuntimeWarning)
 Shot with time interval of 4.427000045776367 ms
 Shot with time interval of 4.427000045776367 ms
 Shot with time interval of 4.427000045776367 ms
@@ -72,9 +72,9 @@ Shot with time interval of 4.427000045776367 ms
 Shot with time interval of 4.427000045776367 ms
 Forward modeling took :- 00:00:11
 Successfully generated 16 shots
-python3 inversion_script.py shot_control_inversion_scipy
+python3 inversion_script.py shot_control_inversion_scipy || true
 Running fwi ...
-Cost_fcn eval took    10.64 sec - Cost_fcn= 9.732E+06
+Cost_fcn eval took     9.91 sec - Cost_fcn= 9.732E+06
 RUNNING THE L-BFGS-B CODE
 
            * * *
@@ -85,75 +85,75 @@ Machine precision = 2.220D-16
 At X0         0 variables are exactly at the bounds
 
 At iterate    0    f=  9.73176D+06    |proj g|=  4.73626D-01
-Cost_fcn eval took     6.62 sec - Cost_fcn= 1.040E+08
-Cost_fcn eval took     6.81 sec - Cost_fcn= 9.728E+06
-Cost_fcn eval took     6.59 sec - Cost_fcn= 6.844E+07
-Cost_fcn eval took     6.74 sec - Cost_fcn= 9.726E+06
-Cost_fcn eval took     6.48 sec - Cost_fcn= 9.726E+06
-Cost_fcn eval took     6.54 sec - Cost_fcn= 4.857E+07
-Cost_fcn eval took     6.35 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.55 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.59 sec - Cost_fcn= 3.793E+07
-Cost_fcn eval took     6.40 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.28 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.42 sec - Cost_fcn= 9.725E+06
+Cost_fcn eval took     6.68 sec - Cost_fcn= 1.040E+08
+Cost_fcn eval took     6.52 sec - Cost_fcn= 9.728E+06
+Cost_fcn eval took     6.44 sec - Cost_fcn= 6.844E+07
+Cost_fcn eval took     6.53 sec - Cost_fcn= 9.726E+06
+Cost_fcn eval took     6.82 sec - Cost_fcn= 9.726E+06
+Cost_fcn eval took     7.48 sec - Cost_fcn= 4.857E+07
+Cost_fcn eval took     6.67 sec - Cost_fcn= 9.725E+06
+Cost_fcn eval took     6.39 sec - Cost_fcn= 9.725E+06
+Cost_fcn eval took     7.47 sec - Cost_fcn= 3.793E+07
+Cost_fcn eval took     6.66 sec - Cost_fcn= 9.725E+06
+Cost_fcn eval took     6.58 sec - Cost_fcn= 9.725E+06
+Cost_fcn eval took     8.09 sec - Cost_fcn= 9.725E+06
 
 At iterate    1    f=  9.72502D+06    |proj g|=  4.73615D-01
-Cost_fcn eval took     6.18 sec - Cost_fcn= 7.310E+06
+Cost_fcn eval took     7.13 sec - Cost_fcn= 7.310E+06
 
 At iterate    2    f=  7.30998D+06    |proj g|=  4.52688D-01
-Cost_fcn eval took     6.30 sec - Cost_fcn= 6.161E+06
+Cost_fcn eval took     6.82 sec - Cost_fcn= 6.161E+06
 
 At iterate    3    f=  6.16079D+06    |proj g|=  4.36160D-01
-Cost_fcn eval took     6.74 sec - Cost_fcn= 3.737E+06
+Cost_fcn eval took     7.25 sec - Cost_fcn= 3.737E+06
 
 At iterate    4    f=  3.73665D+06    |proj g|=  4.30242D-01
-Cost_fcn eval took     7.18 sec - Cost_fcn= 3.480E+06
+Cost_fcn eval took     6.48 sec - Cost_fcn= 3.480E+06
 
 At iterate    5    f=  3.47960D+06    |proj g|=  4.81889D-01
-Cost_fcn eval took     6.73 sec - Cost_fcn= 2.547E+06
+Cost_fcn eval took     6.72 sec - Cost_fcn= 2.547E+06
 
 At iterate    6    f=  2.54710D+06    |proj g|=  4.80780D-01
-Cost_fcn eval took     6.81 sec - Cost_fcn= 1.881E+06
+Cost_fcn eval took     6.70 sec - Cost_fcn= 1.881E+06
 
 At iterate    7    f=  1.88058D+06    |proj g|=  4.76792D-01
-Cost_fcn eval took     7.02 sec - Cost_fcn= 1.486E+06
+Cost_fcn eval took     6.80 sec - Cost_fcn= 1.486E+06
 
 At iterate    8    f=  1.48559D+06    |proj g|=  4.66920D-01
-Cost_fcn eval took     6.94 sec - Cost_fcn= 1.049E+06
+Cost_fcn eval took     6.76 sec - Cost_fcn= 1.049E+06
 
 At iterate    9    f=  1.04919D+06    |proj g|=  4.67158D-01
-Cost_fcn eval took     7.30 sec - Cost_fcn= 8.699E+05
+Cost_fcn eval took     7.47 sec - Cost_fcn= 8.699E+05
 
 At iterate   10    f=  8.69897D+05    |proj g|=  4.53396D-01
-Cost_fcn eval took     7.85 sec - Cost_fcn= 7.248E+05
+Cost_fcn eval took     6.72 sec - Cost_fcn= 7.248E+05
 
 At iterate   11    f=  7.24834D+05    |proj g|=  4.16026D-01
-Cost_fcn eval took     7.81 sec - Cost_fcn= 6.062E+05
+Cost_fcn eval took     6.67 sec - Cost_fcn= 6.062E+05
 
 At iterate   12    f=  6.06211D+05    |proj g|=  3.86073D-01
-Cost_fcn eval took     8.20 sec - Cost_fcn= 5.101E+05
+Cost_fcn eval took     6.63 sec - Cost_fcn= 5.101E+05
 
 At iterate   13    f=  5.10105D+05    |proj g|=  3.64190D-01
-Cost_fcn eval took     7.66 sec - Cost_fcn= 3.670E+05
+Cost_fcn eval took     8.07 sec - Cost_fcn= 3.670E+05
 
 At iterate   14    f=  3.67021D+05    |proj g|=  4.57874D-01
-Cost_fcn eval took     6.74 sec - Cost_fcn= 3.197E+05
+Cost_fcn eval took     6.98 sec - Cost_fcn= 3.197E+05
 
 At iterate   15    f=  3.19696D+05    |proj g|=  3.77206D-01
-Cost_fcn eval took     6.84 sec - Cost_fcn= 2.863E+05
+Cost_fcn eval took     7.10 sec - Cost_fcn= 2.863E+05
 
 At iterate   16    f=  2.86255D+05    |proj g|=  3.50054D-01
-Cost_fcn eval took     6.42 sec - Cost_fcn= 2.714E+05
+Cost_fcn eval took     7.40 sec - Cost_fcn= 2.714E+05
 
 At iterate   17    f=  2.71439D+05    |proj g|=  2.27850D-01
-Cost_fcn eval took     6.69 sec - Cost_fcn= 2.471E+05
+Cost_fcn eval took     7.36 sec - Cost_fcn= 2.471E+05
 
 At iterate   18    f=  2.47064D+05    |proj g|=  3.08305D-01
-Cost_fcn eval took     6.82 sec - Cost_fcn= 2.070E+05
+Cost_fcn eval took     6.76 sec - Cost_fcn= 2.070E+05
 
 At iterate   19    f=  2.06996D+05    |proj g|=  3.35145D-01
-Cost_fcn eval took     6.64 sec - Cost_fcn= 1.551E+05
+Cost_fcn eval took     6.63 sec - Cost_fcn= 1.551E+05
 
 At iterate   20    f=  1.55079D+05    |proj g|=  3.55766D-01
 
@@ -174,8 +174,8 @@ F     = final function value
   F =   155079.33658362224     
 
 STOP: TOTAL NO. of ITERATIONS REACHED LIMIT                 
-Iterative inversion took :- 00:04:27
-2024-05-21 15:32:48,020 - distributed.scheduler - ERROR - Removing worker 'tcp://127.0.0.1:41095' caused the cluster to lose scattered data, which can't be recovered: {'parfile_path', 't0', 'pointwise_op', 'space_order', 'shotfile_path', 'shape', 'nbl', 'origin', 'dt', 'spacing', 'tn', 'model_name', 'solver', 'f0', 'rev_op', 'dtype'} (stimulus_id='handle-worker-cleanup-1716305568.0207233')
+Iterative inversion took :- 00:04:30
+2024-05-24 12:38:58,076 - distributed.scheduler - ERROR - Removing worker 'tcp://127.0.0.1:46207' caused the cluster to lose scattered data, which can't be recovered: {'t0', 'shape', 'tn', 'model_name', 'dt', 'f0', 'origin', 'parfile_path', 'shotfile_path', 'spacing', 'nbl', 'dtype', 'rev_op', 'pointwise_op', 'solver', 'space_order'} (stimulus_id='handle-worker-cleanup-1716554338.0766315')
 python3 fwi_marmousi2_pyrol_trillinos_daskcluster.py
 Running fwi ...
 
@@ -205,45 +205,122 @@ L-Secant-B Line-Search Method (Type B, Bound Constraints)
 Optimization Terminated with Status: Iteration Limit Exceeded
 python3 inversion_script.py shot_control_inversion_sotb
 Running fwi ...
-Cost_fcn eval took     9.41 sec - Cost_fcn= 9.732E+06
-Cost_fcn eval took     6.76 sec - Cost_fcn= 1.040E+08
-Cost_fcn eval took     6.78 sec - Cost_fcn= 9.994E+07
-Cost_fcn eval took     6.94 sec - Cost_fcn= 9.161E+07
-Cost_fcn eval took     6.64 sec - Cost_fcn= 7.360E+07
-Cost_fcn eval took     6.84 sec - Cost_fcn= 5.343E+07
-Cost_fcn eval took     6.48 sec - Cost_fcn= 4.047E+07
-Cost_fcn eval took     6.80 sec - Cost_fcn= 2.542E+07
-Cost_fcn eval took     6.40 sec - Cost_fcn= 1.440E+07
-Cost_fcn eval took     6.42 sec - Cost_fcn= 8.016E+06
-Cost_fcn eval took     6.57 sec - Cost_fcn= 8.005E+06
-Cost_fcn eval took     6.42 sec - Cost_fcn= 7.914E+06
-Cost_fcn eval took     6.54 sec - Cost_fcn= 7.309E+06
-Cost_fcn eval took     7.04 sec - Cost_fcn= 5.941E+06
-Cost_fcn eval took     6.86 sec - Cost_fcn= 5.692E+06
-Cost_fcn eval took     6.83 sec - Cost_fcn= 6.512E+06
-Cost_fcn eval took     6.60 sec - Cost_fcn= 4.761E+06
-Cost_fcn eval took     6.43 sec - Cost_fcn= 4.121E+06
-Cost_fcn eval took     7.00 sec - Cost_fcn= 3.400E+06
-Cost_fcn eval took     6.61 sec - Cost_fcn= 2.596E+06
-Cost_fcn eval took     6.74 sec - Cost_fcn= 1.733E+06
-Cost_fcn eval took     6.44 sec - Cost_fcn= 1.349E+06
-Cost_fcn eval took     6.71 sec - Cost_fcn= 1.288E+06
-Cost_fcn eval took     6.84 sec - Cost_fcn= 1.183E+06
-Cost_fcn eval took     6.34 sec - Cost_fcn= 1.173E+06
+Cost_fcn eval took     9.50 sec - Cost_fcn= 9.732E+06
+Cost_fcn eval took     6.70 sec - Cost_fcn= 1.040E+08
+Cost_fcn eval took     6.60 sec - Cost_fcn= 9.994E+07
+Cost_fcn eval took     6.59 sec - Cost_fcn= 9.161E+07
+Cost_fcn eval took     6.99 sec - Cost_fcn= 7.360E+07
+Cost_fcn eval took     7.03 sec - Cost_fcn= 5.343E+07
+Cost_fcn eval took     6.67 sec - Cost_fcn= 4.047E+07
+Cost_fcn eval took     6.82 sec - Cost_fcn= 2.542E+07
+Cost_fcn eval took     7.02 sec - Cost_fcn= 1.440E+07
+Cost_fcn eval took     6.95 sec - Cost_fcn= 8.016E+06
+Cost_fcn eval took     6.81 sec - Cost_fcn= 8.005E+06
+Cost_fcn eval took     6.70 sec - Cost_fcn= 7.914E+06
+Cost_fcn eval took     6.84 sec - Cost_fcn= 7.309E+06
+Cost_fcn eval took     6.94 sec - Cost_fcn= 5.941E+06
+Cost_fcn eval took     6.90 sec - Cost_fcn= 5.692E+06
+Cost_fcn eval took     6.74 sec - Cost_fcn= 6.512E+06
+Cost_fcn eval took     6.21 sec - Cost_fcn= 4.761E+06
+Cost_fcn eval took     6.51 sec - Cost_fcn= 4.121E+06
+Cost_fcn eval took     6.61 sec - Cost_fcn= 3.400E+06
+Cost_fcn eval took     6.73 sec - Cost_fcn= 2.596E+06
+Cost_fcn eval took     6.72 sec - Cost_fcn= 1.733E+06
+Cost_fcn eval took     6.46 sec - Cost_fcn= 1.349E+06
+Cost_fcn eval took     6.22 sec - Cost_fcn= 1.288E+06
+Cost_fcn eval took     6.50 sec - Cost_fcn= 1.183E+06
+Cost_fcn eval took     6.58 sec - Cost_fcn= 1.173E+06
 Cost_fcn eval took     6.71 sec - Cost_fcn= 1.162E+06
-Cost_fcn eval took     6.16 sec - Cost_fcn= 1.209E+06
-Cost_fcn eval took     6.39 sec - Cost_fcn= 7.589E+05
-Cost_fcn eval took     6.49 sec - Cost_fcn= 7.129E+05
-Cost_fcn eval took     6.71 sec - Cost_fcn= 4.281E+05
-Cost_fcn eval took     6.61 sec - Cost_fcn= 5.054E+05
-Cost_fcn eval took     6.73 sec - Cost_fcn= 3.990E+05
-Cost_fcn eval took     6.79 sec - Cost_fcn= 3.794E+05
-Cost_fcn eval took     6.51 sec - Cost_fcn= 3.601E+05
-Cost_fcn eval took     6.28 sec - Cost_fcn= 3.378E+05
-Iterative inversion took :- 00:04:28
+Cost_fcn eval took     7.06 sec - Cost_fcn= 1.209E+06
+Cost_fcn eval took     7.02 sec - Cost_fcn= 7.589E+05
+Cost_fcn eval took     7.06 sec - Cost_fcn= 7.129E+05
+Cost_fcn eval took     7.02 sec - Cost_fcn= 4.281E+05
+Cost_fcn eval took     7.20 sec - Cost_fcn= 5.054E+05
+Cost_fcn eval took     6.42 sec - Cost_fcn= 3.990E+05
+Cost_fcn eval took     7.31 sec - Cost_fcn= 3.794E+05
+Cost_fcn eval took     6.96 sec - Cost_fcn= 3.601E+05
+Cost_fcn eval took     6.75 sec - Cost_fcn= 3.378E+05
+Iterative inversion took :- 00:04:33
 END OF TEST
 FINAL iterate is :  [0.44444445 0.44444445 0.44444445 ... 0.0743812  0.07149379 0.06978292]
 See the convergence history in iterate_LBFGS.dat
+python3 inversion_script.py shot_control_inversion_nlopt
+Running fwi ...
+ Iteration    Function Val         norm(g)
+Cost_fcn eval took     9.38 sec - Cost_fcn= 9.732E+06
+         1     9.73176e+06     1.84245e+02
+Cost_fcn eval took     6.61 sec - Cost_fcn= 2.303E+07
+         2     2.30265e+07     4.06681e+02
+Cost_fcn eval took     6.85 sec - Cost_fcn= 9.227E+06
+         3     9.22650e+06     1.89238e+02
+Cost_fcn eval took     6.67 sec - Cost_fcn= 3.064E+07
+         4     3.06386e+07     4.38373e+02
+Cost_fcn eval took     6.37 sec - Cost_fcn= 9.338E+06
+         5     9.33806e+06     1.61961e+02
+Cost_fcn eval took     6.00 sec - Cost_fcn= 9.225E+06
+         6     9.22467e+06     1.89086e+02
+Cost_fcn eval took     6.70 sec - Cost_fcn= 6.797E+06
+         7     6.79651e+06     1.61567e+02
+Cost_fcn eval took     6.65 sec - Cost_fcn= 6.406E+06
+         8     6.40554e+06     2.18455e+02
+Cost_fcn eval took     6.96 sec - Cost_fcn= 5.882E+06
+         9     5.88231e+06     1.77999e+02
+Cost_fcn eval took     7.08 sec - Cost_fcn= 4.255E+06
+        10     4.25493e+06     1.02999e+02
+Cost_fcn eval took     7.13 sec - Cost_fcn= 4.240E+06
+        11     4.24012e+06     1.02416e+02
+Cost_fcn eval took     7.12 sec - Cost_fcn= 3.858E+06
+        12     3.85843e+06     9.05354e+01
+Cost_fcn eval took     7.57 sec - Cost_fcn= 3.697E+06
+        13     3.69661e+06     8.60576e+01
+Cost_fcn eval took     6.96 sec - Cost_fcn= 3.626E+06
+        14     3.62589e+06     8.45011e+01
+Cost_fcn eval took     7.57 sec - Cost_fcn= 3.620E+06
+        15     3.62012e+06     8.43682e+01
+Cost_fcn eval took     8.44 sec - Cost_fcn= 3.482E+06
+        16     3.48191e+06     8.17255e+01
+Cost_fcn eval took     6.92 sec - Cost_fcn= 3.410E+06
+        17     3.41048e+06     8.03531e+01
+Cost_fcn eval took     7.29 sec - Cost_fcn= 3.231E+06
+        18     3.23117e+06     7.72018e+01
+Cost_fcn eval took     7.24 sec - Cost_fcn= 3.096E+06
+        19     3.09552e+06     7.49269e+01
+Cost_fcn eval took     6.55 sec - Cost_fcn= 2.832E+06
+        20     2.83249e+06     7.04207e+01
+Cost_fcn eval took     6.78 sec - Cost_fcn= 2.697E+06
+        21     2.69723e+06     6.81168e+01
+Cost_fcn eval took     7.23 sec - Cost_fcn= 2.650E+06
+        22     2.64997e+06     6.72629e+01
+Cost_fcn eval took     7.22 sec - Cost_fcn= 2.593E+06
+        23     2.59312e+06     6.62590e+01
+Cost_fcn eval took     7.05 sec - Cost_fcn= 2.557E+06
+        24     2.55732e+06     6.57444e+01
+Cost_fcn eval took     6.81 sec - Cost_fcn= 2.515E+06
+        25     2.51548e+06     6.49666e+01
+Cost_fcn eval took     7.38 sec - Cost_fcn= 2.400E+06
+        26     2.40029e+06     6.36432e+01
+Cost_fcn eval took     8.37 sec - Cost_fcn= 2.346E+06
+        27     2.34640e+06     6.24542e+01
+Cost_fcn eval took     6.92 sec - Cost_fcn= 2.281E+06
+        28     2.28138e+06     6.14875e+01
+Cost_fcn eval took     6.88 sec - Cost_fcn= 2.173E+06
+        29     2.17303e+06     6.00497e+01
+Cost_fcn eval took     7.09 sec - Cost_fcn= 2.152E+06
+        30     2.15206e+06     5.96543e+01
+Cost_fcn eval took     6.88 sec - Cost_fcn= 2.142E+06
+        31     2.14197e+06     5.95280e+01
+Cost_fcn eval took     6.47 sec - Cost_fcn= 2.118E+06
+        32     2.11807e+06     5.90464e+01
+Cost_fcn eval took     7.01 sec - Cost_fcn= 2.114E+06
+        33     2.11441e+06     5.90031e+01
+Cost_fcn eval took     6.86 sec - Cost_fcn= 2.102E+06
+        34     2.10188e+06     5.87821e+01
+Cost_fcn eval took     6.77 sec - Cost_fcn= 2.024E+06
+        35     2.02366e+06     5.76671e+01
+Iterative inversion took :- 00:04:56
+END OF TEST
+minimum value =  2023663.4048203537
+result code =  5
 ```
 
 There you have it ✌️ 
