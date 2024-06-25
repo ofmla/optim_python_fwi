@@ -69,7 +69,7 @@ class DaskCluster:
             # single-threaded execution, as this is actually best for the workload
             cluster = LocalCluster(n_workers=self.config_values["n_workers"],
                                    threads_per_worker=1,
-                                   memory_limit='5GB', death_timeout=60,
+                                   memory_limit='15GB', death_timeout=60,
                                    resources={'process': 1})
         else:
             cluster = SLURMCluster(queue=self.config_values["queue"],
@@ -356,24 +356,25 @@ class DaskCluster:
             filename = '{}_{}_suheader_{}.segy'.format('shot', str_shot, model_name)
             filename = solver_params['shotfile_path'] + filename
             if dt is not None:
-                nsamples = int((tn-t0)/dt + 1)
+                dt2 = dt
+                nsamples = int((tn-t0)/dt2 + 1)
                 data = dobs.resample(num=nsamples)
             else:
-                dt = model.critical_dt
+                dt2 = model.critical_dt
                 data = dobs
             # Save shot in segy format
             if len(shape) == 3:
                 segy_write(data.data[:], [src.coordinates.data[0, 0]],
                            [src.coordinates.data[0, -1]],
                            data.coordinates.data[:, 0],
-                           data.coordinates.data[:, -1], dt, filename,
+                           data.coordinates.data[:, -1], dt2, filename,
                            sourceY=[src.coordinates.data[0, 1]],
                            groupY=data.coordinates.data[:, -1])
             else:
                 segy_write(data.data[:], [src.coordinates.data[0, 0]],
                            [src.coordinates.data[0, -1]],
                            data.coordinates.data[:, 0],
-                           data.coordinates.data[:, -1], dt, filename)
+                           data.coordinates.data[:, -1], dt2, filename)
             data = None
         del solver
         return True
