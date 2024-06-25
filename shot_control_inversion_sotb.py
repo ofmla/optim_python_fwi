@@ -20,7 +20,7 @@ class ControlInversion:
 
         # Read initial guess and metadata from hdf5 file
         with h5py.File(parfile_path + 'vp_start.h5', 'r') as f:
-            v0 = f['vp_start'][()]
+            v0 = f['vp'][()]
             metadata = json.loads(f['metadata'][()])
 
         dc.config_values['solver_params']['origin'] = (*metadata['origin'],)
@@ -53,7 +53,7 @@ class ControlInversion:
         print_flag = 1  # print info in output files
         debug = 0  # level of details for output files
         niter_max = 20  # maximum iteration number
-        nls_max = 20  # maximum line-search number
+        nls_max = 5  # maximum line-search number
 
         # computation of the cost and gradient associated
         # with the initial guess
