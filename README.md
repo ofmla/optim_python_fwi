@@ -1,5 +1,5 @@
 # Open-source numerical optimization python libraries for full-waveform inversion: A Review.
-This repository contains the implementation to reproduce the numerical experiments of the Geoscience Letters paper: Open-source numerical optimization python
+This repository contains the implementation to reproduce the numerical experiments of the Seismica paper: Open-source numerical optimization python
 libraries for full-waveform inversion: A Review.
 
 👉 To find your way around the code, the `mymakefile` file is the recommended starting point. 
