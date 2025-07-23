@@ -81,80 +81,72 @@ RUNNING THE L-BFGS-B CODE
 Machine precision = 2.220D-16
  N =        37488     M =           10
 
-At X0         0 variables are exactly at the bounds
+At iterate    0    f=  9.73177D+06    |proj g|=  4.73626D-01
+Cost_fcn eval took     6.33 sec - Cost_fcn= 1.040E+08
+Cost_fcn eval took     7.10 sec - Cost_fcn= 9.728E+06
+Cost_fcn eval took     6.32 sec - Cost_fcn= 6.844E+07
+Cost_fcn eval took     7.06 sec - Cost_fcn= 9.726E+06
+Cost_fcn eval took     6.26 sec - Cost_fcn= 9.726E+06
+Cost_fcn eval took     6.99 sec - Cost_fcn= 9.726E+06
 
-At iterate    0    f=  9.73176D+06    |proj g|=  4.73626D-01
-Cost_fcn eval took     6.68 sec - Cost_fcn= 1.040E+08
-Cost_fcn eval took     6.52 sec - Cost_fcn= 9.728E+06
-Cost_fcn eval took     6.44 sec - Cost_fcn= 6.844E+07
-Cost_fcn eval took     6.53 sec - Cost_fcn= 9.726E+06
-Cost_fcn eval took     6.82 sec - Cost_fcn= 9.726E+06
-Cost_fcn eval took     7.48 sec - Cost_fcn= 4.857E+07
-Cost_fcn eval took     6.67 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.39 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     7.47 sec - Cost_fcn= 3.793E+07
-Cost_fcn eval took     6.66 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     6.58 sec - Cost_fcn= 9.725E+06
-Cost_fcn eval took     8.09 sec - Cost_fcn= 9.725E+06
+At iterate    1    f=  9.72588D+06    |proj g|=  4.73617D-01
+Cost_fcn eval took     7.01 sec - Cost_fcn= 7.308E+06
 
-At iterate    1    f=  9.72502D+06    |proj g|=  4.73615D-01
-Cost_fcn eval took     7.13 sec - Cost_fcn= 7.310E+06
+At iterate    2    f=  7.30833D+06    |proj g|=  4.52685D-01
+Cost_fcn eval took     6.34 sec - Cost_fcn= 6.161E+06
 
-At iterate    2    f=  7.30998D+06    |proj g|=  4.52688D-01
-Cost_fcn eval took     6.82 sec - Cost_fcn= 6.161E+06
+At iterate    3    f=  6.16085D+06    |proj g|=  4.36160D-01
+Cost_fcn eval took     7.29 sec - Cost_fcn= 3.732E+06
 
-At iterate    3    f=  6.16079D+06    |proj g|=  4.36160D-01
-Cost_fcn eval took     7.25 sec - Cost_fcn= 3.737E+06
+At iterate    4    f=  3.73238D+06    |proj g|=  4.31804D-01
+Cost_fcn eval took     6.40 sec - Cost_fcn= 3.485E+06
 
-At iterate    4    f=  3.73665D+06    |proj g|=  4.30242D-01
-Cost_fcn eval took     6.48 sec - Cost_fcn= 3.480E+06
+At iterate    5    f=  3.48450D+06    |proj g|=  4.81889D-01
+Cost_fcn eval took     6.70 sec - Cost_fcn= 2.548E+06
 
-At iterate    5    f=  3.47960D+06    |proj g|=  4.81889D-01
-Cost_fcn eval took     6.72 sec - Cost_fcn= 2.547E+06
+At iterate    6    f=  2.54849D+06    |proj g|=  4.80791D-01
+Cost_fcn eval took     7.02 sec - Cost_fcn= 1.881E+06
 
-At iterate    6    f=  2.54710D+06    |proj g|=  4.80780D-01
-Cost_fcn eval took     6.70 sec - Cost_fcn= 1.881E+06
+At iterate    7    f=  1.88088D+06    |proj g|=  4.76795D-01
+Cost_fcn eval took     6.46 sec - Cost_fcn= 1.485E+06
 
-At iterate    7    f=  1.88058D+06    |proj g|=  4.76792D-01
-Cost_fcn eval took     6.80 sec - Cost_fcn= 1.486E+06
+At iterate    8    f=  1.48542D+06    |proj g|=  4.66909D-01
+Cost_fcn eval took     6.91 sec - Cost_fcn= 1.049E+06
 
-At iterate    8    f=  1.48559D+06    |proj g|=  4.66920D-01
-Cost_fcn eval took     6.76 sec - Cost_fcn= 1.049E+06
+At iterate    9    f=  1.04931D+06    |proj g|=  4.67145D-01
+Cost_fcn eval took     6.60 sec - Cost_fcn= 8.750E+05
 
-At iterate    9    f=  1.04919D+06    |proj g|=  4.67158D-01
-Cost_fcn eval took     7.47 sec - Cost_fcn= 8.699E+05
+At iterate   10    f=  8.75026D+05    |proj g|=  4.62418D-01
+Cost_fcn eval took     6.96 sec - Cost_fcn= 7.302E+05
 
-At iterate   10    f=  8.69897D+05    |proj g|=  4.53396D-01
-Cost_fcn eval took     6.72 sec - Cost_fcn= 7.248E+05
+At iterate   11    f=  7.30162D+05    |proj g|=  4.14073D-01
+Cost_fcn eval took     6.88 sec - Cost_fcn= 6.127E+05
 
-At iterate   11    f=  7.24834D+05    |proj g|=  4.16026D-01
-Cost_fcn eval took     6.67 sec - Cost_fcn= 6.062E+05
+At iterate   12    f=  6.12679D+05    |proj g|=  3.90788D-01
+Cost_fcn eval took     6.81 sec - Cost_fcn= 5.161E+05
 
-At iterate   12    f=  6.06211D+05    |proj g|=  3.86073D-01
-Cost_fcn eval took     6.63 sec - Cost_fcn= 5.101E+05
+At iterate   13    f=  5.16131D+05    |proj g|=  3.65810D-01
+Cost_fcn eval took     7.37 sec - Cost_fcn= 3.746E+05
 
-At iterate   13    f=  5.10105D+05    |proj g|=  3.64190D-01
-Cost_fcn eval took     8.07 sec - Cost_fcn= 3.670E+05
+At iterate   14    f=  3.74626D+05    |proj g|=  4.58039D-01
+Cost_fcn eval took     6.45 sec - Cost_fcn= 3.195E+05
 
-At iterate   14    f=  3.67021D+05    |proj g|=  4.57874D-01
-Cost_fcn eval took     6.98 sec - Cost_fcn= 3.197E+05
+At iterate   15    f=  3.19487D+05    |proj g|=  3.77208D-01
+Cost_fcn eval took     7.17 sec - Cost_fcn= 2.913E+05
 
-At iterate   15    f=  3.19696D+05    |proj g|=  3.77206D-01
-Cost_fcn eval took     7.10 sec - Cost_fcn= 2.863E+05
+At iterate   16    f=  2.91265D+05    |proj g|=  3.50149D-01
+Cost_fcn eval took     6.32 sec - Cost_fcn= 2.743E+05
 
-At iterate   16    f=  2.86255D+05    |proj g|=  3.50054D-01
-Cost_fcn eval took     7.40 sec - Cost_fcn= 2.714E+05
+At iterate   17    f=  2.74300D+05    |proj g|=  2.36171D-01
+Cost_fcn eval took     6.98 sec - Cost_fcn= 2.499E+05
 
-At iterate   17    f=  2.71439D+05    |proj g|=  2.27850D-01
-Cost_fcn eval took     7.36 sec - Cost_fcn= 2.471E+05
+At iterate   18    f=  2.49862D+05    |proj g|=  3.14808D-01
+Cost_fcn eval took     6.66 sec - Cost_fcn= 2.069E+05
 
-At iterate   18    f=  2.47064D+05    |proj g|=  3.08305D-01
-Cost_fcn eval took     6.76 sec - Cost_fcn= 2.070E+05
+At iterate   19    f=  2.06865D+05    |proj g|=  3.36018D-01
+Cost_fcn eval took     6.42 sec - Cost_fcn= 1.540E+05
 
-At iterate   19    f=  2.06996D+05    |proj g|=  3.35145D-01
-Cost_fcn eval took     6.63 sec - Cost_fcn= 1.551E+05
-
-At iterate   20    f=  1.55079D+05    |proj g|=  3.55766D-01
+At iterate   20    f=  1.53984D+05    |proj g|=  3.46861D-01
 
            * * *
 
@@ -169,12 +161,11 @@ F     = final function value
            * * *
 
    N    Tit     Tnf  Tnint  Skip  Nact     Projg        F
-37488     20     32  22796     0    76   3.558D-01   1.551D+05
-  F =   155079.33658362224     
+37488     20     26  22796     0    72   3.469D-01   1.540D+05
+  F =   153983.64062500000     
 
 STOP: TOTAL NO. of ITERATIONS REACHED LIMIT                 
-Iterative inversion took :- 00:04:30
-2024-05-24 12:38:58,076 - distributed.scheduler - ERROR - Removing worker 'tcp://127.0.0.1:46207' caused the cluster to lose scattered data, which can't be recovered: {'t0', 'shape', 'tn', 'model_name', 'dt', 'f0', 'origin', 'parfile_path', 'shotfile_path', 'spacing', 'nbl', 'dtype', 'rev_op', 'pointwise_op', 'solver', 'space_order'} (stimulus_id='handle-worker-cleanup-1716554338.0766315')
+Iterative inversion took :- 00:03:35
 python3 fwi_marmousi2_pyrol_trillinos_daskcluster.py
 Running fwi ...
 
