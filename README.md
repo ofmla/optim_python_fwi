@@ -1,6 +1,6 @@
-# Open-source numerical optimization python libraries for full-waveform inversion: A Review.
-This repository contains the implementation to reproduce the numerical experiments of the Seismica paper: Open-source numerical optimization python
-libraries for full-waveform inversion: A Review.
+# A Brief Exploration of open-source gradient-based numerical optimization Python libraries for full-waveform inversion.
+This repository contains the implementation to reproduce the numerical experiments of the Seismica paper: A Brief Exploration of open-source gradient-based
+numerical optimization Python libraries for full-waveform inversion.
 
 👉 To find your way around the code, the `mymakefile` file is the recommended starting point. 
 
@@ -10,11 +10,10 @@ Along with the code a `Dockerfile` from which you can build a docker image for o
 
 ### Build the docker image
 
-You can build the docker image, named myapp, with the following commands
+You can build the docker image, named myapp, with the following command
 
 ```shell
-MY_KEY=$(cat ~/.ssh/id_rsa)
-docker build --build-arg SSH_KEY="$MY_KEY" --tag myapp .
+docker build --tag myapp .
 ```
 
 … then wait for docker to build an image for our app (it might tight a take for downloading and update it the packages list).
