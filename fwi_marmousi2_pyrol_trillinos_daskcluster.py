@@ -11,6 +11,7 @@ from pyrol.vectors import NumPyVector
 from dask_cluster import DaskCluster
 import cloudpickle as pickle
 from utils import expand_array, save_model
+from inversion_script import inversion_setup
 
 
 def elementwise_sum(arrays):
@@ -149,4 +150,5 @@ if __name__ == "__main__":
     being replaced by ROL. It uses a simple toy example for validation of the
     code.
     """
+    inversion_setup("./config/config.yaml")
     main()
